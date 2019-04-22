@@ -17,6 +17,9 @@
         "php": "^7.1",
         "illuminate/support" : "~5"
     },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
     "autoload": {
     	"psr-4": {
     		"Clippedcode\\Gogs\\": "src/"
