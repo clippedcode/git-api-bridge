@@ -21,7 +21,7 @@ return [
          * EXAMPLE: https://git.example.io/api/v1
          */
 
-        'endpoint'  => '',
+        'endpoint'  => env('CLIPPEDCODE_GOGS_ENDPOINT', ''),
 
         /**
          * ACCESS TOKEN
@@ -30,7 +30,7 @@ return [
          * query Gogs API.
          */
 
-        'token'  => '',
+        'token'  => env('CLIPPEDCODE_GOGS_TOKEN'),
     ],
     
 ];

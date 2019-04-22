@@ -1,6 +1,6 @@
 {
     "name": "clippedcode/gogs",
-    "description": "GOGS (GO GIT SERVER) API Client written in PHP for Consuming APIs of GOGS Server. Supporting Laravel 5.8+ (^5.6) and PHP 7.2 (^7.1)",
+    "description": "GOGS (GO GIT SERVER) API Client written in PHP for Consuming APIs of GOGS Server. Supporting Laravel 5.6/5.7/5.8+ (^5.6) and PHP 7.1+ (^7.1). A LARAVEL BRIDGE PACKAGE.",
     "type": "package",
     "license": "MIT",
     "authors": [
@@ -18,7 +18,8 @@
         "illuminate/support" : "~5"
     },
     "require-dev": {
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "clippedcode/gogs-client": "1.*"
     },
     "autoload": {
     	"psr-4": {
