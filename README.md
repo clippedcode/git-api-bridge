@@ -5,7 +5,7 @@
 This is an API Client for [GOGS GIT server](https://gogs.io). This Repository is based on [Joachim M. Giaever's `gogs-php-api-client`](https://git.giaever.org/joachimmg/gogs-php-api-client). This Repository retains the Orignal Author of the Project.
 > **Q:** What is GOGS?
 >
-> **A:** GOGS is a Painless Git Server written in GO Programming Language. It is so light weight that it can even run on 512mb RAM in a Docker Instance. It has a Front-end Interface as well as REST API (`v1`) that this client consumes.
+> **A:** GOGS is a Painless self-hosted Git Server written in GO Programming Language. It is so light weight that it can even run on 512mb RAM in a Docker Instance. It has a Front-end Interface as well as REST API (`v1`) that this client consumes.
 
 ## Requirements
 
