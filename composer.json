@@ -1,0 +1,36 @@
+{
+    "name": "clippedcode/gogs",
+    "description": "GOGS (GO GIT SERVER) API Client written in PHP for Consuming APIs of GOGS Server. Supporting Laravel 5.8+ (^5.6) and PHP 7.2 (^7.1)",
+    "type": "package",
+    "license": "MIT LICENSE",
+    "authors": [
+        {
+            "name": "Shashwat Mishra",
+            "email": "shashwat9630@gmail.com"
+        },
+        {
+            "name": "Joachim M. Giaever",
+            "email": "joachim@giaever.org"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support" : "~5"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Clippedcode\\Gogs\\": "src/"
+    	}
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Clippedcode\\Gogs\\GogsServiceProvider"
+            ],
+            "aliases": {
+                "Trickster": "Clippedcode\\Gogs\\Facade\\Gogs"
+            }
+        }
+    }
+}

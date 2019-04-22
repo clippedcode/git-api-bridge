@@ -1,0 +1,3 @@
+[submodule "sami-markdown"]
+	path = sami-markdown
+	url = giaever@git.giaever.org:joachimmg/sami-markdown.git
