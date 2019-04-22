@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^6.2",
-        "clippedcode/gogs-client": "1.*"
+        "clippedcode/gogs-client": "dev-master"
     },
     "autoload": {
     	"psr-4": {
