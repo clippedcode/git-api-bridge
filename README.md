@@ -1,8 +1,8 @@
-# GOGS API CLIENT
+# GIT API CLIENT
 
 **Current Status: `ALPHA.1`**
 
-This is an API Client for [GOGS GIT server](https://gogs.io). This Repository is based on [Joachim M. Giaever's `gogs-php-api-client`](https://git.giaever.org/joachimmg/gogs-php-api-client). This Repository retains the Orignal Author of the Project.
+This is an API Client for Custom GIT server. This Repository is based on [Joachim M. Giaever's `gogs-php-api-client`](https://git.giaever.org/joachimmg/gogs-php-api-client). This Repository retains the Orignal Author of the Project.
 > **Q:** What is GOGS?
 >
 > **A:** GOGS is a Painless self-hosted Git Server written in GO Programming Language. It is so light weight that it can even run on 512mb RAM in a Docker Instance. It has a Front-end Interface as well as REST API (`v1`) that this client consumes.
@@ -26,12 +26,12 @@ composer require clippedcode/gogs:dev-master
 ### 2. Laravel
 
 - Register Service Provider:
-  > As it require minimum Laravel `5.7+` Installation, therefore the `Clippedcode\Gogs\GogsServiceProvider::class` will be registered automatically.
+  > As it require minimum Laravel `5.7+` Installation, therefore the `Clippedcode\Git\GitServiceProvider::class` will be registered automatically.
 
 - Publish Configuration:
 
   ```shell
-  php artisan vendor:publish --tag=clippedcode_gogs_config
+  php artisan vendor:publish --tag=clippedcode_git_config
   ```
 
 - Edit Configurations: Edit the configurations according to your needs.
