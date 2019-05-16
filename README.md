@@ -20,7 +20,7 @@ This is an API Client for Custom GIT server. This Repository is based on [Joachi
 ### 1. Composer
 
 ```bash
-composer require clippedcode/gogs:dev-master
+composer require clippedcode/git:dev-master
 ```
 
 ### 2. Laravel
