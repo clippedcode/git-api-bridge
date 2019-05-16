@@ -1,12 +1,12 @@
 <?php
-namespace Clippedcode\Gogs\Facade;
+namespace Clippedcode\Git\Facade;
 
 use Illuminate\Support\Facades\Facade;
 
-class Gogs extends Facade {
+class Git extends Facade {
     
 	public static function getFacadeAccessor()
 	{
-		return "gogs";
+		return "git";
 	}
 }

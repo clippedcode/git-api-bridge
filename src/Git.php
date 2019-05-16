@@ -1,16 +1,16 @@
 <?php
-namespace Clippedcode\Gogs;
+namespace Clippedcode\Git;
 /**
- * Main Interface for the GOGS API Bridge
+ * Main Interface for the Git API Bridge
  * @author Shashwat Mishra <shashwat@clippedcode.com>
  * @copyright Clipped Code <https://clippedcode.com>
  * @version 0.0.1-Alpha.1
  */
 
-use Clippedcode\GogsClient\API\Client;
-use Clippedcode\GogsClient\Lib\Curl\Exception as ApiException;
+use Clippedcode\GitClient\API\Client;
+use Clippedcode\GitClient\Lib\Curl\Exception as ApiException;
 
-class Gogs {
+class Git {
     /**
      * Client Interface
      * @var object client

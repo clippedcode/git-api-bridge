@@ -1,9 +1,9 @@
 <?php
-namespace Clippedcode\Gogs;
+namespace Clippedcode\Git;
 
 use Illuminate\Support\ServiceProvider;
 
-class GogsServiceProvider extends ServiceProvider
+class GitServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -14,9 +14,9 @@ class GogsServiceProvider extends ServiceProvider
     {
         // loading the routes
         // require __DIR__ . "/Http/routes.php";
-        $configPath = __DIR__ . '/config/ccgogs.php';
-        $this->publishes([$configPath => config_path('ccgogs.php')], 'clippedcode_gogs_config');
-        $this->mergeConfigFrom($configPath, 'ccgogs');
+        $configPath = __DIR__ . '/config/ccgit.php';
+        $this->publishes([$configPath => config_path('ccgit.php')], 'clippedcode_git_config');
+        $this->mergeConfigFrom($configPath, 'ccgit');
     }
 
     /**
@@ -26,15 +26,15 @@ class GogsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Clippedcode\Gogs\Gogs');
+        $this->app->make('Clippedcode\Git\Git');
 
         $this->bindFacade();
 
     }
 
     private function bindFacade() {
-        $this->app->bind('gogs', function($app) {
-            return new Gogs();
+        $this->app->bind('git', function($app) {
+            return new Git();
         });
     }
 

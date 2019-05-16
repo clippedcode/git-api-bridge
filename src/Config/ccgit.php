@@ -15,22 +15,22 @@ return [
          * ENDPOINT
          * --------------------------------------
          * This Configures the Endpoints of your
-         * hosted gogs server. This is basically
-         * the Base URL to your Gogs Server API
+         * hosted Git server. This is basically
+         * the Base URL to your Git Server API
          * 
          * EXAMPLE: https://git.example.io/api/v1
          */
 
-        'endpoint'  => env('CLIPPEDCODE_GOGS_ENDPOINT', ''),
+        'endpoint'  => env('CLIPPEDCODE_GIT_ENDPOINT', ''),
 
         /**
          * ACCESS TOKEN
          * --------------------------------------
          * The token for an authorized user to
-         * query Gogs API.
+         * query Git API.
          */
 
-        'token'  => env('CLIPPEDCODE_GOGS_TOKEN'),
+        'token'  => env('CLIPPEDCODE_GIT_TOKEN'),
     ],
     
 ];
